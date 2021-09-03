@@ -18,3 +18,18 @@ document.getElementById('search-icon').onclick = () => {
 document.getElementById('close').onclick = () => {
   document.getElementById('search-form').classList.remove('active');
 }
+
+// swiper
+var swiper = new Swiper(".banner-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+});
